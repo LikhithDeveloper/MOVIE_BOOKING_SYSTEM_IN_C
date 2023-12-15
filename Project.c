@@ -1014,7 +1014,7 @@ void seats(int mem, int choice, int a, int b, int p)
             }
         }
 
-        else if(a==3||a==5)
+        else if(a==3||a==6)
         {
            if(b==1)
             {
