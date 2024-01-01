@@ -19,25 +19,25 @@ int main()
     while (1)
     {
         printf("-----MOVIE BOOKING-----\n");
-        printf("1. BAGAVANTH KESARI\n");
-        printf("2. LEO\n");
-        printf("3. TIGER NAGESWARRAO\n");
+        printf("1. HI NANNA\n");
+        printf("2. ANIMAL\n");
+        printf("3. EXTRA ORDINARY MAN\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
         switch (choice)
         {
         case 1:
-            printf("Ticket price for BAGAVANTH KESARI is 100/-\n");
+            printf("Ticket price for HI NANNA is 100/-\n");
             g=booking(100, choice);
             break;
 
         case 2:
-            printf("Ticket price for LEO is 150/-\n");
+            printf("Ticket price for ANIMAL is 150/-\n");
             g=booking(150, choice);
             break;
 
         case 3:
-            printf("Ticket price for TIGER NAGESWARRAO is 100/-\n");
+            printf("Ticket price for EXTRA is 100/-\n");
             g=booking(100, choice);
             break;
 
@@ -176,31 +176,37 @@ int booking(int ticket, int choice)
             z=timings(ticket, choice, a, day, x1);
             if(z==1)
             return 1;
+
             break;
         case 2:printf("--Saturday--");
             z=timings(ticket, choice, a, day, x1);
             if(z==1)
             return 1;
+
             break;
         case 3:printf("--Sunday--");
             z=timings(ticket, choice, a, day, x1);
             if(z==1)
             return 1;
+
             break;
         case 4:printf("--Monday--");
             z=timings(ticket, choice, a, day, x1);
             if(z==1)
             return 1;
+
             break;
         case 5:printf("--Tuesday--");
             z=timings(ticket, choice, a, day, x1);
             if(z==1)
             return 1;
+
             break;
         case 6:printf("--Wednesday--");
             z=timings(ticket, choice, a, day, x1);
             if(z==1)
             return 1;
+
             break;
     }
 
@@ -296,7 +302,7 @@ void price(int ticket, int choice, int a, int b)
 void seats(int mem, int choice, int a, int b, int p)
 {
     int i, r, c, d[10][10], tik, seat[10], count=0, k=0, j, seat_number,tik1,n=100;
-   int array1[100], lik=0;
+    int array1[100], lik=0;
     tik = mem;
     tik1=mem;
 
@@ -341,6 +347,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt1);
+                printf("file1");
             }
             else if(b==2)
             {
@@ -374,6 +381,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt2);
+                printf("file2");
             }
             
             else if(b==3)
@@ -408,6 +416,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt3);
+                printf("file3");
             }
             
             else if(b==4)
@@ -442,6 +451,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt4);
+                printf("file4");
             }
             
         }
@@ -479,6 +489,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt5);
+                printf("file5");
             }
             else if(b==2)
             {
@@ -512,6 +523,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt6);
+                printf("file6");
             }
             
             else if(b==3)
@@ -546,6 +558,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt7);
+                printf("file7");
             }
             
             else if(b==4)
@@ -581,6 +594,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt8);
+                printf("file8");
             }
         }
 
@@ -618,6 +632,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt9);
+                printf("file9");
             }
             else if(b==2)
             {
@@ -651,6 +666,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt10);
+                printf("file10");
             }
             
             else if(b==3)
@@ -685,6 +701,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt11);
+                printf("file11");
             }
             
             else if(b==4)
@@ -720,6 +737,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt12);
+                printf("file12");
             }
         }
     }
@@ -764,6 +782,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt13);
+                printf("file13");
             }
             else if(b==2)
             {
@@ -798,6 +817,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt14);
+                printf("file14");
             }
             
             else if(b==3)
@@ -833,6 +853,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt15);
+                printf("file15");
             }
             
             else if(b==4)
@@ -868,6 +889,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt16);
+                printf("file16");
             }
             
         }
@@ -907,6 +929,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt17);
+                printf("file17");
             }
             else if(b==2)
             {
@@ -941,6 +964,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt18);
+                printf("file18");
             }
             
             else if(b==3)
@@ -976,6 +1000,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt19);
+                printf("file19");
             }
             
             else if(b==4)
@@ -1011,6 +1036,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt20);
+                printf("file20");
             }
         }
 
@@ -1049,6 +1075,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt21);
+                printf("file21");
             }
             else if(b==2)
             {
@@ -1081,6 +1108,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt22);
+                printf("file22");
             }
             
             else if(b==3)
@@ -1116,6 +1144,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt23);
+                printf("file23");
             }
             
             else if(b==4)
@@ -1151,6 +1180,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt24);
+                printf("file24");
             }
         }
     }
@@ -1193,6 +1223,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt25);
+                printf("file25");
             }
             else if(b==2)
             {
@@ -1227,6 +1258,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt26);
+                printf("file26");
             }
             
             else if(b==3)
@@ -1262,6 +1294,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt27);
+                printf("file27");
             }
             
             else if(b==4)
@@ -1297,6 +1330,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt28);
+                printf("file28");
             }
             
         }
@@ -1336,6 +1370,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt29);
+                printf("file29");
             }
             else if(b==2)
             {
@@ -1370,6 +1405,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt30);
+                printf("file30");
             }
             
             else if(b==3)
@@ -1405,6 +1441,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt31);
+                printf("file31");
             }
             
             else if(b==4)
@@ -1440,6 +1477,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt32);
+                printf("file32");
             }
         }
 
@@ -1478,6 +1516,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt33);
+                printf("file33");
             }
             else if(b==2)
             {
@@ -1512,6 +1551,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt34);
+                printf("file34");
             }
             
             else if(b==3)
@@ -1547,6 +1587,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt35);
+                printf("file35");
             }
             
             else if(b==4)
@@ -1582,6 +1623,7 @@ void seats(int mem, int choice, int a, int b, int p)
                 }
                 overview(mem,array1,lik);
                 fclose(fpt36);
+                printf("file36");
             }
         }
     }
@@ -1590,7 +1632,7 @@ void seats(int mem, int choice, int a, int b, int p)
 }
 
 
-void overview(int men, int array1[], int lik)
+void overview(int mem, int array1[], int lik)
 {
     int seat_number, i, j, k;
     printf("\n--------------------------------------------\n");
@@ -1719,6 +1761,7 @@ int times(int a, int day, int x1)
     else
     {
         printf("1. 11:00\n2. 2:15\n3. 6:15\n4. 9:15\n");
+        return 2;
     }
 }
 
@@ -1742,33 +1785,6 @@ void flushing(int choice)
     int x=tm_info->tm_hour;
     int y=tm_info->tm_mon + 1;
 
-    switch (day) 
-    {
-        case 0:
-            printf("Sunday\n");
-            break;
-        case 1:
-            printf("Monday\n");
-            break;
-        case 2:
-            printf("Tuesday\n");
-            break;
-        case 3:
-            printf("Wednesday\n");
-            break;
-        case 4:
-            printf("Thursday\n");
-            break;
-        case 5:
-            printf("Friday\n");
-            break;
-        case 6:
-            printf("Saturday\n");
-            break;
-        default:
-            printf("Invalid day\n");
-            break;
-    }
     if(choice==1)
     {
         if(day==5||day==1||day==6||day==2)
@@ -1996,8 +2012,7 @@ void flushing(int choice)
                 fclose(fpt31);
             }
             if(x<22 && (day==0 || day==3))
-            {
-	
+            {	
                 fpt32=fopen("file32.txt","w");
                 fflush(fpt32);
                 fclose(fpt32);
